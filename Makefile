@@ -133,9 +133,9 @@ endif
 # 9.6MHz internal / 8 = 750kHz  (Start-up time 14CK+65ms)
 #AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x6a:m -U hfuse:w:0xfb:m
 # 4.8MHz internal / 8 = 575kHz (Start-up time 14CK+65ms)
-AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x69:m -U hfuse:w:0xfd:m
+#AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x69:m -U hfuse:w:0xfd:m
 # 128kHz internal
-#AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x7b:m -U hfuse:w:0xfd:m
+AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x7b:m -U hfuse:w:0xfd:m -B250
 # 128kHz internal / 8 =  16kHz
 #AVRDUDE_WRITE_FUSE ?= -U lfuse:w:0x6b:m -U hfuse:w:0xfd:m
 

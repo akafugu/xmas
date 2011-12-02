@@ -37,7 +37,6 @@
 
 // for counting seconds
 volatile uint8_t int_counter;
-volatile uint8_t sec_counter;
 
 // for tracking which pattern to show
 volatile uint8_t pattern;
@@ -241,7 +240,6 @@ void main(void)
 	function_list[4] = &blink_staggered;
 	function_list[5] = &blink_all;
 
-	sec_counter = 2;
 	sei();
 
 	while(1) {
